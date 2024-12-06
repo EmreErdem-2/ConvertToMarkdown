@@ -1,0 +1,24 @@
+from CorrectFileNames import cleanFileNames
+from PdfToDoc import runScript as runPdfToDocx
+from DocxToMd import runScript as runDocToMd
+from RearrangeMediaFiles import rearrangeMediaFiles 
+from RearrangeMarkdownMediaLinks import runRearrangeMediaLinks
+
+import sys
+
+#Default parameter values
+pdfInputPath = './'
+docxPath = "./"
+mdOutputPath = "./"
+
+if len(sys.argv) >= 2 : inputPath = sys.argv[1]
+if len(sys.argv) >= 3 : docxPath = sys.argv[2]
+if len(sys.argv) >= 4 : mdOutputPath = sys.argv[3]
+
+
+if __name__ == "__main__":
+    cleanFileNames(pdfInputPath)
+    runPdfToDocx(pdfInputPath,docxPath)
+    runDocToMd(docxPath,mdOutputPath)
+    rearrangeMediaFiles(mdOutputPath)
+    runRearrangeMediaLinks(mdOutputPath)
