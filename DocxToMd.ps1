@@ -1,7 +1,7 @@
 param (
     [Parameter(Mandatory=$true)]
-    [string]$FileInputDirectory = "C:\Users\eerde\Desktop\PythonProjects\PythonTest\pdftodocx\output\",
-    [string]$FileOutputDirectory = "C:\Users\eerde\Desktop\PythonProjects\PythonTest\pdftodocx\output\MarkdownFiles\"
+    [string]$FileInputDirectory = ".\",
+    [string]$FileOutputDirectory = ".\"
 )
 
 Get-ChildItem $FileInputDirectory -Filter *.docx | 

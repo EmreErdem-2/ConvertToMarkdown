@@ -77,7 +77,7 @@ def runRearrangeMediaLinks(location_file):
         print(replace_file_paths(file_path))
 
 
-location_file = r"C:/Users/eerde/Desktop/PythonProjects/PythonTest/pdftodocx/output/MarkdownFiles/"
+location_file = r"./"
 
 if len(sys.argv) >= 2 : location_file = sys.argv[1]
 

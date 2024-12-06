@@ -7,9 +7,9 @@ import shutil
 #Creates a one media folder for a section
 #Renames all the media files according to their name + media
 
-inputPath = 'C:/Users/eerde/Desktop/PythonProjects/PythonTest/pdftodocx/input/'
-inputPath2 = "C:/Users/eerde/Desktop/PythonProjects/PythonTest/pdftodocx/output/"
-outputPath = "C:/Users/eerde/Desktop/PythonProjects/PythonTest/pdftodocx/output/MarkdownFiles/"
+inputPath = './'
+inputPath2 = "./"
+outputPath = "./"
 
 if len(sys.argv) >= 2 : inputPath = sys.argv[1]
 if len(sys.argv) >= 3 : outputPath = sys.argv[2]

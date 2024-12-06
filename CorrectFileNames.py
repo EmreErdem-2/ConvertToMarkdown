@@ -53,7 +53,7 @@ def cleanFileNames(directory):
         print(f'Renamed: {filename} -> {cleaned_filename}')
 
 # Specify the directory containing the files
-directory = r'C:\Users\eerde\Desktop\TargetNotebookFolder'
+directory = r'./'
 
 if len(sys.argv) >= 2 : directory = sys.argv[1]
 

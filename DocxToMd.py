@@ -13,8 +13,8 @@ def runPowerShell(cmd,args):
 
     return completed
 
-inputPath = "C:/Users/eerde/Desktop/PythonProjects/PythonTest/pdftodocx/output/"
-outputPath = "C:/Users/eerde/Desktop/PythonProjects/PythonTest/pdftodocx/output/MarkdownFiles/"
+inputPath = './'
+outputPath = "./"
 
 if len(sys.argv) >= 2 : inputPath = sys.argv[1]
 if len(sys.argv) >= 3 : outputPath = sys.argv[2]
